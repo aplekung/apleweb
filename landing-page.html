@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Hub | Fisch Script</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ลิงก์ไปยัง CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>[Zee Hub] Fisch Script | Auto Fishing | AFK Farm | No Key</h1>
+        
+        <img src="banner.png" alt="Zee Hub Fisch Script" class="banner">
+
+        <div class="script-box">
+            <p>คัดลอกสคริปต์ไปใช้งาน:</p>
+            <textarea readonly>loadstring(game:HttpGet("https://zwu.xyz/Zee-Hub-Fisch"))()</textarea>
+            <button onclick="copyScript()">คัดลอก</button>
+        </div>
+
+        <ul class="features">
+            <li>✅ Auto Farm Money</li>
+            <li>✅ Auto Fishing</li>
+            <li>✅ AFK Farm</li>
+            <li>✅ No Key</li>
+            <li>✅ และอื่นๆ</li>
+        </ul>
+
+        <p class="redirecting">🔄 กำลังนำทางไปยังลิงก์ดาวน์โหลด...</p>
+    </div>
+
+    <script>
+        function copyScript() {
+            const scriptBox = document.querySelector("textarea");
+            scriptBox.select();
+            document.execCommand("copy");
+            alert("คัดลอกสคริปต์เรียบร้อย!");
+        }
+    </script>
+
+</body>
+</html>
