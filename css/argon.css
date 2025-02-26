@@ -32,6 +32,7 @@ body {
     max-width: 100px;
     width: auto;
     object-fit: contain;
+    user-select: none;
 }
 
 .arlogo span {
@@ -102,14 +103,42 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     gap: 8px;
+    user-select: none; /* ป้องกันการคัดลอก */
+    transition: all 0.3s ease-in-out;
 }
+
+.tag:hover {
+    color: #111;
+    background: rgb(59, 58, 58);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
 h1 {
-    font-size: 42px;
-    margin: 20px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    user-select: none; /* ป้องกันการคัดลอก */
+    transition: all 0.3s ease-in-out;
 }
+h1:hover{
+    color: rgb(0, 204, 255);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
 .highlight {
-    color: #3BA9FF;
+    color: #00bfff;
+    text-shadow: 0 0 15px rgba(0, 191, 255, 0.7);
+    transition: all 0.3s ease-in-out;
 }
+
+.highlight:hover {
+    color: white;
+    text-shadow: 0 0 20px rgb(79, 242, 248);
+}
+
 
 /* Buttons */
 .buttons {
@@ -176,6 +205,14 @@ pre {
     color: rgb(163, 163, 159);
     font-size: 1.2rem;
     max-width: 600px;
+    margin: 0 auto; /* จัดกึ่งกลาง */
     margin-bottom: 2rem;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: center; /* จัดข้อความตรงกลาง */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 50vh; /* ทำให้มันอยู่ตรงกลางจอ */
 }
