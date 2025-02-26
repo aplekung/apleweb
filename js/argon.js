@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".download-btn").addEventListener("click", function() {
-        alert("Downloading Argon Executor...");
-    });
-
-    document.querySelector(".watch-btn").addEventListener("click", function() {
-        alert("Opening Demo Video...");
-    });
-
-    document.querySelector(".discord-btn").addEventListener("click", function() {
-        window.location.href = "https://discord.com"; // เปลี่ยนเป็นลิงก์ Discord จริง
+        Swal.fire({
+            title: "ยืนยันการดาวน์โหลด",
+            text: "คุณต้องการไปยังหน้าดาวน์โหลดหรือไม่?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "ใช่, ไปเลย!",
+            cancelButtonText: "ยกเลิก"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.open('https://getargon.xyz/', '_blank');
+            }
+        });
     });
 });
