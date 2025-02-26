@@ -20,10 +20,31 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
-.logo {
+.arlogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: -5px
+}
+
+.arlogo {
+    height: 40px;
+    max-width: 100px;
+    width: auto;
+    object-fit: contain;
+}
+
+.arlogo span {
     font-size: 20px;
     font-weight: bold;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin-left: -10px;
 }
+
 .menu a {
     color: white;
     margin: 0 15px;
@@ -67,13 +88,20 @@ body {
 }
 /* Container */
 .container {
-    padding: 120px 20px;
+    padding: 20px 20px;
 }
 .tag {
-    background: orange;
-    padding: 5px 15px;
-    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    background: #111;
+    color: white;
     font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    gap: 8px;
 }
 h1 {
     font-size: 42px;
@@ -97,34 +125,11 @@ h1 {
     margin: 5px;
     transition: 0.3s;
 }
-.watch-btn {
-    background: transparent;
-    border: 1px solid white;
-    transition: 0.3s;
-}
-
-.watch-btn:hover {
-    background-color: #383838;
-}
 
 .download-btn:hover {
     background-color: rgb(6, 63, 138);
 }
 
-/* Stats */
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-}
-.box {
-    background: #111;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 120px;
-}
 
 /* Code Box */
 .code-box {
@@ -150,4 +155,12 @@ pre {
     border-radius: 5px;
     font-family: monospace;
     overflow-x: auto;
+}
+
+.hero-description {
+    color: rgb(163, 163, 159);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
