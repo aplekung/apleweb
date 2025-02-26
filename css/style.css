@@ -20,24 +20,38 @@ header {
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
+.menu a {
     color: white;
-    font-size: 16px;
-    padding: 10px;
-    transition: 0.3s;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
-
-nav ul li a:hover {
-    color: red;
+.menu a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3BA9FF;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+.menu a:hover {
+    color: #3BA9FF;
+}
+.menu a:hover::after {
+    width: 100%;
+}
+.menu a.active {
+    color: #3BA9FF;
+    font-weight: bold;
+}
+.menu a.active::after {
+    width: 100%;
 }
 
 .hero {
