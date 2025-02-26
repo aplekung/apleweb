@@ -57,12 +57,30 @@ header {
 .contact-info {
     text-align: center;
     padding: 50px 20px;
+    transition: 0.3s ease-in-out;
 }
 
 .contact-info h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    user-select: none; /* ป้องกันการคัดลอก */
+    transition: 0.3s ease-in-out;
 }
+
+.contact-info a {
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-info h2:hover,
+.contact-info a:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
 
 .social-links {
     display: flex;
@@ -86,7 +104,7 @@ header {
 }
 
 .social-links a:hover {
-    background-color: red;
+    background-color: rgba(139, 59, 59, 0.315);
 }
 
 .social-links img {
