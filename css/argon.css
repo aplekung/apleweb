@@ -185,15 +185,15 @@ pre {
     color: rgb(163, 163, 159);
     font-size: 1.2rem;
     max-width: 600px;
-    margin: 0 auto; /* จัดกึ่งกลาง */
-    margin-bottom: 2rem;
+    margin: 20px auto; /* ปรับ margin ให้สมดุล */
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     text-align: center; /* จัดข้อความตรงกลาง */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    min-height: 50vh; /* ทำให้มันอยู่ตรงกลางจอ */
-    user-select: none;
+    padding: 10px; /* ลด padding ลง */
+    min-height: auto; /* เอา min-height 50vh ออก เพื่อให้เว้นระยะธรรมชาติ */
+    line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัดให้อ่านง่ายขึ้น */
 }
+
