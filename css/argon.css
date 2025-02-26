@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     text-align: center;
 }
 
-/* Navbar */
 .navbar {
     background-color: #000;
     padding: 15px 0;
@@ -79,7 +78,7 @@ body {
 .menu a.active::after {
     width: 100%;
 }
-/* Container */
+
 .container {
     padding: 20px 20px;
 }
@@ -95,7 +94,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     gap: 8px;
-    user-select: none; /* ป้องกันการคัดลอก */
+    user-select: none; 
     transition: all 0.3s ease-in-out;
 }
 
@@ -112,7 +111,7 @@ h1 {
     color: white;
     text-align: center;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    user-select: none; /* ป้องกันการคัดลอก */
+    user-select: none; 
     transition: all 0.3s ease-in-out;
 }
 h1:hover{
@@ -132,30 +131,27 @@ h1:hover{
 }
 
 
-/* Buttons */
 .buttons {
     margin: 20px 0;
 }
 .download-btn, .Fix-btn {
     background: #3BA9FF;
-    border: 2px solid rgba(7, 25, 126, 0.842); /* เพิ่มขอบสีขาวโปร่งแสง */
+    border: 2px solid rgba(7, 25, 126, 0.842);
     padding: 12px 20px;
     color: rgb(255, 255, 255);
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
     transition: 0.3s;
-    box-shadow: 0 0 10px rgba(59, 169, 255, 0.6); /* Glow อ่อนๆ */
+    box-shadow: 0 0 10px rgba(59, 169, 255, 0.6);
 }
 
 .download-btn:hover, .Fix-btn:hover {
     background-color: rgb(6, 63, 138);
-    border: 2px solid rgba(77, 213, 255, 0.8); /* ทำให้ขอบชัดขึ้น */
-    box-shadow: 0 0 20px rgba(6, 63, 138, 0.9); /* Glow แรงขึ้น */
+    border: 2px solid rgba(77, 213, 255, 0.8); 
+    box-shadow: 0 0 20px rgba(6, 63, 138, 0.9); 
 }
 
-
-/* Code Box */
 .code-box {
     background: #151515;
     padding: 15px;
@@ -185,15 +181,15 @@ pre {
     color: rgb(163, 163, 159);
     font-size: 1.2rem;
     max-width: 600px;
-    margin: 20px auto; /* ปรับ margin ให้สมดุล */
+    margin: 20px auto;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    text-align: center; /* จัดข้อความตรงกลาง */
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px; /* ลด padding ลง */
-    min-height: auto; /* เอา min-height 50vh ออก เพื่อให้เว้นระยะธรรมชาติ */
-    line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัดให้อ่านง่ายขึ้น */
+    padding: 10px;
+    min-height: auto;
+    line-height: 1.6; 
 }
 
