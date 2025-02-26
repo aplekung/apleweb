@@ -130,6 +130,21 @@ h1 {
     background-color: rgb(6, 63, 138);
 }
 
+.Fix-btn {
+    background: #3BA9FF;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.Fix-btn:hover {
+    background-color: rgb(6, 63, 138);
+}
+
 
 /* Code Box */
 .code-box {
