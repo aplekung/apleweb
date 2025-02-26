@@ -195,4 +195,5 @@ pre {
     justify-content: center;
     padding: 20px;
     min-height: 50vh; /* ทำให้มันอยู่ตรงกลางจอ */
+    user-select: none;
 }
