@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Hub | </title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="shortcut icon" href="img/aple.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+        <h1>[Zee Hub]  | Auto Farm | Blue lock Rival </h1>
+        
+        <img src="img/Zee-Hub.png" alt="" class="banner">
+        <div class="meta">Zee Hub Blue lock Rival Script</div>
+
+        <div class="script-box">
+            <p>คัดลอกสคริปต์ไปใช้งาน:</p>
+            <textarea readonly>loadstring(game:HttpGet("https://zuwz.xyz/ZEEHubVNBlueLock.lua"))()</textarea>
+            <button onclick="copyScript()">คัดลอก</button>
+        </div>
+
+        <ul class="features">
+            <li>✅ Auto Farm </li>
+            <li>✅ Auto Kaitun</li>
+            <li>✅ และอื่นๆ</li>
+            <li>✅ No Key</li>
+        </ul>
+
+    </div>
+
+    <script>
+        function copyScript() {
+            const scriptBox = document.querySelector("textarea");
+            scriptBox.select();
+            document.execCommand("copy");
+            alert("คัดลอกสคริปต์เรียบร้อย!");
+        }
+    </script>
+
+</body>
+</html>
